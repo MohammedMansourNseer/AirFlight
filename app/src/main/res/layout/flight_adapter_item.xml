@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="false"
+    app:strokeColor="@color/primaryLight"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/llTripData"
+            app:layout_constraintTop_toBottomOf="@+id/llArrivalData">
+
+            <TextView
+                android:id="@+id/tvPrice"
+                style="@style/MyTextViewStyleBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:text="@string/price_value" />
+
+            <TextView
+                android:id="@+id/tvPriceCurrency"
+                style="@style/MyTextViewStyleBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/currency_usd" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivDepartureAirPort"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_departure"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/llDepartureData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/ivDepartureAirPort"
+            app:layout_constraintEnd_toStartOf="@+id/llTripData"
+            app:layout_constraintStart_toEndOf="@+id/ivDepartureAirPort"
+            app:layout_constraintTop_toTopOf="@+id/ivDepartureAirPort">
+
+            <TextView
+                android:id="@+id/tvDepartureAirPort"
+                style="@style/MyTextViewStyleBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_data" />
+
+            <TextView
+                android:id="@+id/tvDepartureDate"
+                style="@style/MyTextViewStyleNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/no_data" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/ivArrivalAirPort"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_arrival"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivDepartureAirPort" />
+
+        <LinearLayout
+            android:id="@+id/llArrivalData"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/ivArrivalAirPort"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+            app:layout_constraintStart_toEndOf="@+id/ivArrivalAirPort"
+            app:layout_constraintTop_toTopOf="@+id/ivArrivalAirPort">
+
+            <TextView
+                android:id="@+id/tvArrivalAirPort"
+                style="@style/MyTextViewStyleBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_data"
+                app:layout_constraintStart_toEndOf="@+id/ivArrivalAirPort"
+                app:layout_constraintTop_toTopOf="@+id/ivArrivalAirPort" />
+
+            <TextView
+                android:id="@+id/tvArrivalDate"
+                style="@style/MyTextViewStyleNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/no_data"
+                app:layout_constraintStart_toStartOf="@+id/tvArrivalAirPort"
+                app:layout_constraintTop_toBottomOf="@+id/tvArrivalAirPort" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llTripData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/llDepartureData">
+
+            <TextView
+                android:id="@+id/tvAirLine"
+                style="@style/MyTextViewStyleBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/no_data" />
+
+            <TextView
+                android:id="@+id/tvFlightNumber"
+                style="@style/MyTextViewStyleBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="end"
+                android:text="@string/no_data" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
+
+

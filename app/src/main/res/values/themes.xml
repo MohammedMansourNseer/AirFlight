@@ -1,0 +1,109 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Flight" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Flight" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primaryDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="MyTextViewStyleDate" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="marginHorizontal">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_gravity">center_vertical</item>
+
+        <!-- Add more attributes as needed -->
+    </style>
+
+    <style name="MyTextViewStyleBold" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_gravity">center_vertical</item>
+
+        <!-- Add more attributes as needed -->
+    </style>
+
+    <style name="MyTextViewStyleNormal" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:includeFontPadding">false</item>
+        <!-- Add more attributes as needed -->
+    </style>
+
+
+    <style name="myTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/white</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxCornerRadiusTopEnd">4dp</item>
+        <item name="boxCornerRadiusTopStart">4dp</item>
+        <item name="boxCornerRadiusBottomEnd">4dp</item>
+        <item name="boxCornerRadiusBottomStart">4dp</item>
+        <item name="boxStrokeColor">@color/grey</item>
+        <item name="boxStrokeErrorColor">@color/red</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="errorTextAppearance">@style/AppearanceErrorSmall</item>
+        <item name="errorEnabled">true</item>
+        <item name="errorIconTint">@android:color/transparent</item>
+        <item name="errorTextColor">@color/red</item>
+        <item name="hintEnabled">true</item>
+        <item name="android:hint">@string/no_data</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+    <style name="myTextInputEdit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">start|center</item>
+        <item name="android:paddingStart">50dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="AppearanceErrorSmall">
+<!--        <item name="android:fontFamily">@font/cairo_500</item>-->
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+
+    <style name="ThemeOverlay.App.BottomSheetDialogWhite" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ModalBottomSheetDialogWhite</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="ModalBottomSheetDialogWhite" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.Round.10DP</item>
+    </style>
+
+    <style name="ShapeAppearance.App.Round.10DP" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15dp</item>
+    </style>
+
+
+
+</resources>

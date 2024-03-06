@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryLight">#FFD3C5</color>
+    <color name="primary">#648BEC</color>
+    <color name="primaryDark">#2A56C6</color>
+    <color name="colorAccent">#DD4700</color>
+    <color name="black">#FF000000</color>
+    <color name="red">#F60000</color>
+    <color name="grey100">#EDEDED</color>
+    <color name="grey">#909090</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="tabIndicator">#FFE9E2</color>
+</resources>

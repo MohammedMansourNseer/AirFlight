@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/flightFragment">
+    <fragment
+        android:id="@+id/flightFragment"
+        android:name="dev.trip.airflight.presentation.flights.FlightFragment"
+        android:label="FlightFragment"
+        tools:layout="@layout/fragment_flight" >
+        <action
+            android:id="@+id/action_flightFragment_to_flightDetailsFragment"
+            app:destination="@id/flightDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/flightDetailsFragment"
+        android:name="dev.trip.airflight.presentation.flightDetails.FlightDetailsFragment"
+        android:label="fragment_flight_details"
+        tools:layout="@layout/fragment_flight_details" >
+        <argument
+            android:name="flight"
+            app:argType="dev.trip.airflight.domain.flights.model.FlightsModel" />
+    </fragment>
+</navigation>

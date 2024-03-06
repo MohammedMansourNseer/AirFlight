@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/sheet_indicator_bg"
+        android:importantForAccessibility="no" />
+
+    <RadioGroup
+        android:id="@+id/sortGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rdRecommended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="recommended"
+            android:text="@string/recommended"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:buttonTint="@color/primary"
+            tools:checked="true" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rdPriceHL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="price_high_low"
+            android:text="@string/price_from_h"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:buttonTint="@color/primary" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rdPriceLH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="price_low_high"
+            android:text="@string/price_from_l"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:buttonTint="@color/primary" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rdTimeAsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="departure_asc"
+            android:text="@string/departure_time_ascending"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:buttonTint="@color/primary" />
+
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/rdTimeDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="departure_desc"
+            android:text="@string/departure_time_descending"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:buttonTint="@color/primary" />
+    </RadioGroup>
+
+</LinearLayout>
