@@ -26,6 +26,6 @@ user can sort flights by price - time
 <img src="https://i.ibb.co/VH79VsN/Whats-App-Image-2024-03-06-at-13-09-48.jpg" width="200">
 <img src="https://i.ibb.co/23hNVSD/Whats-App-Image-2024-03-06-at-13-09-47-2.jpg" width="200">
 <img src="https://i.ibb.co/9rTyL9C/Whats-App-Image-2024-03-06-at-13-09-47-1.jpg" width="200">
-<img src="https://i.ibb.co/Kr4Dd1g/Whats-App-Image-2024-03-06-at-13-09-47.jpg" width="200">
 <img src="https://i.ibb.co/6mnzCcF/Whats-App-Image-2024-03-06-at-13-47-51.jpg" width="200">
+<img src="https://i.ibb.co/Kr4Dd1g/Whats-App-Image-2024-03-06-at-13-09-47.jpg" width="200">
 </p>
